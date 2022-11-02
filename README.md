@@ -46,5 +46,9 @@
 
 ### Запрос
 
-Select product.name, category.name from product_category Join product on product_category.id_product=product.id left Join category on product_category.id_category=category.id;
+<p>
+      Использую JOIN т.к. работаю с двумя таблицами. Чтобы вывелся продукт без категории, использую LEFT JOIN.
+
+      SELECT product.name, category.name FROM product_category JOIN product ON product_category.id_product = product.id LEFT JOIN category ON product_category.id_category = category.id;
+</p>
 
